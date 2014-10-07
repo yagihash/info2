@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ex01-3-1</title>
+    <script src="./ex.js"></script>
+    <style>
+      pre {
+        display: inline-block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li>nが10以下 → <pre>n <= 10</pre></li>
+      <li>nが10未満 → <pre>n < 10</pre></li>
+      <li>nが3桁の数字 → <pre>99 < n && n < 1000</pre></li>
+      <li>nが10の倍数 → <pre>!(n % 10)</pre></li>
+      <li>nが閏年→ <pre>!(n % 4) && n % 100 || !(n % 400)</pre></li>
+    </ul>
+  </body>
+</html>
