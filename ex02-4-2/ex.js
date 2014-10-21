@@ -5,6 +5,9 @@ window.onload = function() {
   canvas.height = 200;
   var pi = document.getElementById("pi");
   var ctx = canvas.getContext("2d");
+  form.onsubmit = function() {
+    return false;
+  }
   form.n.onkeyup = function() {
     var n = form.n.value - 0;
 
