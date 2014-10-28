@@ -5,5 +5,5 @@ window.onload = function() {
   button.onclick = function() {
     var result = (Math.random()*6 | 0) + 1
     t.innerText = result+'';
-  }
-}
+  };
+};

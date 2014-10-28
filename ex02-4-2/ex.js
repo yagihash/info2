@@ -7,7 +7,7 @@ window.onload = function() {
   var ctx = canvas.getContext("2d");
   form.onsubmit = function() {
     return false;
-  }
+  };
   form.n.onkeyup = function() {
     var n = form.n.value - 0;
 
@@ -41,8 +41,8 @@ window.onload = function() {
     pi.innerText = (sum / (r * 2)).toString();
     this.focus();
     return false;
-  }
-}
+  };
+};
 
 function distance(x1, y1, x2, y2) {
   with(Math)

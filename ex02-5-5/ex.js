@@ -10,13 +10,13 @@ window.onload = function() {
     for(var i = 0; i < 1000; i++)
       points.push(dropPoint(ctx, w, h));
     pi.innerText = calcRatio(w, h, r, points).toString();
-  }
+  };
   document.getElementById("reset").onclick = function() {
     pi.innerText = "??";
     setCircle(ctx, w, h, r);
-  }
+  };
   setCircle(ctx, w, h, r);
-}
+};
 
 function setCircle(ctx, w, h, r) {
   ctx.fillStyle = "#FFFFFF";

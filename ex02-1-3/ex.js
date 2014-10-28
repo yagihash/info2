@@ -4,4 +4,4 @@ window.onload = function() {
     o.push(n--);
   }
   document.body.innerHTML = o.join(", ");
-}
+};

@@ -20,4 +20,4 @@ window.onload = function() {
     ctx.stroke();
     ctx.closePath();
   }
-}
+};

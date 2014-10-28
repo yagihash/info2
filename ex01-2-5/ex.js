@@ -6,8 +6,8 @@ window.onload = function() {
     var result = distance.call(this);
     t.innerText = result.toString();
     return false;
-  }
-}
+  };
+};
 
 function distance() {
   var x1 = Number(this.x1.value), y1 = Number(this.y1.value);
@@ -15,4 +15,3 @@ function distance() {
   with(Math)
     return sqrt(pow((x2-x1), 2) + pow((y2-y1), 2));
 }
-

@@ -15,5 +15,5 @@ window.onload = function() {
                     Number(y.slice(6, 8)).toString() + "日";
     }
     return false;
-  }
-}
+  };
+};

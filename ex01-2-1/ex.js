@@ -7,5 +7,5 @@ window.onload = function() {
     if(n)
       t.innerText = (n | 0).toString();
     return false;
-  }
-}
+  };
+};

@@ -8,4 +8,4 @@ window.onload = function() {
 
   ctx.strokeRect(50, 50, 100, 100);
   ctx.fillRect(50, 50, 100, 100);
-}
+};

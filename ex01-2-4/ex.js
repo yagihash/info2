@@ -7,13 +7,13 @@ window.onload = function() {
     var result = calc.call(this, toDegrees);
     t.innerText = result.toString();
     return false;
-  }
+  };
   d2r.onsubmit = function() {
     var result = calc.call(this, toRadians);
     t.innerText = result.toString();
     return false;
-  }
-}
+  };
+};
 
 function toDegrees(r) {
   return r * 180 / Math.PI;

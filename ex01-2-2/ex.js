@@ -7,5 +7,5 @@ window.onload = function() {
     if(n)
       t.innerText = (Math.ceil(n/100)*100).toString();
     return false;
-  }
-}
+  };
+};

@@ -6,4 +6,4 @@ window.onload = function() {
     n++;
   }
   document.body.innerHTML = o.join(", ");
-}
+};

@@ -4,4 +4,4 @@ window.onload = function() {
     document.body.innerHTML += n.toString() + "<br>";
     n *= 2;
   }
-}
+};

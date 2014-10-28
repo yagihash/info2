@@ -6,4 +6,4 @@ window.onload = function() {
     a *= 2;
     n++;
   }
-}
+};
