@@ -1,0 +1,9 @@
+* {
+  font-family: monospace;
+}
+
+input[type=number] {
+  display: inline-block;
+  margin-right: 5px;
+  width: 50px;
+}
