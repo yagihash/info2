@@ -1,0 +1,5 @@
+AuthUserFile /home/t11913yy/public_html/info2/basic/.htpasswd
+AuthName "BasicAuth area for Fundamentals of Information Technology 2"
+AuthType Basic
+require valid-user
+
