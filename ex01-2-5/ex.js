@@ -4,7 +4,10 @@ window.onload = function() {
   var form = document.forms[0];
   form.onsubmit = function() {
     var result = distance.call(this);
-    t.innerText = result.toString();
+    if(t.hasOwnProperty("innerText"))
+      t.innerText = result.toString();
+    else
+      t.textContent = result.toString();
     return false;
   };
 };

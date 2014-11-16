@@ -5,12 +5,18 @@ window.onload = function() {
   var d2r = document.forms[1];
   r2d.onsubmit = function() {
     var result = calc.call(this, toDegrees);
-    t.innerText = result.toString();
+    if(t.hasOwnProperty("innerText"))
+      t.innerText = result.toString();
+    else
+      t.textContent = result.toString();
     return false;
   };
   d2r.onsubmit = function() {
     var result = calc.call(this, toRadians);
-    t.innerText = result.toString();
+    if(t.hasOwnProperty("innerText"))
+      t.innerText = result.toString();
+    else
+      t.textContent = result.toString();
     return false;
   };
 };

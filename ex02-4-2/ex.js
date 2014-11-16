@@ -38,7 +38,10 @@ window.onload = function() {
       ctx.stroke();
       ctx.closePath();
     }
-    pi.innerText = (sum / (r * 2)).toString();
+    if(pi.hasOwnProperty("innerText"))
+      pi.innerText = (sum / (r * 2)).toString();
+    else
+      pi.textContent = (sum / (r * 2)).toString();
     this.focus();
     return false;
   };

@@ -10,9 +10,15 @@ window.onload = function() {
 
     if(y) {
       y = form.number.value;
-      t.innerText = Number(y.slice(0, 4)).toString() + "年" +
-                    Number(y.slice(4, 6)).toString() + "月" +
-                    Number(y.slice(6, 8)).toString() + "日";
+      if(t.hasOwnProperty("innerText"))
+        t.innerText = Number(y.slice(0, 4)).toString() + "年" +
+                      Number(y.slice(4, 6)).toString() + "月" +
+                      Number(y.slice(6, 8)).toString() + "日";
+      else
+        t.textContent = Number(y.slice(0, 4)).toString() + "年" +
+                        Number(y.slice(4, 6)).toString() + "月" +
+                        Number(y.slice(6, 8)).toString() + "日";
+        
     }
     return false;
   };
