@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+  </head>
+
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+<% for( var i = 0; i <= 10; i++) { %>
+      <li>2<sup><%= i %></sup> = <%= Math.pow(2, i) %></li>
+<% } %>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+  </head>
+
+  <body>
+    <h1><%= title %></h1>
+    <form method="post">
+      メッセージ: <input type="text" name="msg" size="100">
+      <input type="submit" value="投稿">
+    </form>
+    <table>
+      <tr>
+        <thead>
+          <th>番号</th>
+          <th>メッセージ</th>
+        </thead>
+        <tbody>
+<% messages.forEach(function(e, i, a) { %>
+          <tr>
+            <td><%= i + 1 %></td>
+            <td><%= e.content %></td>
+          </tr>
+<% }); %>
+        </tbody>
+      </tr>
+  </body>
+</html>
