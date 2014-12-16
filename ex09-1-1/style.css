@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+table {
+  font-family: monospace;
+  border-collapse: collapse;
+  text-align: right;
+}
+
+table * tr th {
+  background-color: #DDDDDD;
+}
+
+table * tr th {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: normal;
+}
+
+table tbody tr {
+  border-bottom: solid 1px #DDDDDD;
+}
+
+table tbody tr td {
+  padding: 10px;
+}
