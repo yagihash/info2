@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function() {
     if(!zoom)
       return alert("縮尺は数値を指定してください");
     zoom = (zoom < 1) ? 1 : (zoom > 20) ? 20 : zoom;
-    this.lng.value = zoom;
+    this.zoom.value = zoom;
     img.src = url + makeQueryParams({
       appid: appid,
       lat: lat,
