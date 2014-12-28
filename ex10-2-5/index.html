@@ -10,7 +10,7 @@
 
   <body>
     <form>
-      <input type="text" name="search" placeholder="Zip code..." autofocus required>
+      <input type="text" pattern="^([0-9]{7})|([0-9]{3}-[0-9]{4})$" name="search" placeholder="Ex.) 2520816" autofocus required>
       <input type="submit" value="検索">
     </form>
     <span style="display:block" id="result"></span>

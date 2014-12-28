@@ -3,10 +3,14 @@ $(function() {
     e.preventDefault();
     var search = this.search.value;
     getResult(search).then(function() {
-      var result = this.promise.result.data;
-      $("#result").text(result.fullAddress);
+      var result = this.promise.result;
+      $("form input[name=search]").val(this.promise.search);
+      if(result.code === 200)
+        $("#result").text(result.data.fullAddress);
+      else
+        $("#result").text(result.code + ": " + result.message);
     }).fail(function() {
-      $("#result").text("Error.");
+      $("#result").text("Communication error.");
     });
   });
 });
@@ -21,6 +25,7 @@ function getResult(search) {
     url: url,
     dataType: "json",
     success: function(json) {
+      d.promise.search = search;
       d.promise.result = json;
       d.resolve();
     },
